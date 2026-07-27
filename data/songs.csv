@@ -1,4 +1,4 @@
-id,title,artist,genre,mood,energy,tempo_bpm,valence,acousticness
+id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18
 2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71
 3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10

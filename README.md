@@ -110,16 +110,36 @@ You can add more tests in `tests/test_recommender.py`.
 
 ## Sample Recommendation Output
 
-Paste a sample of your recommender's output here as a text block so a reader can see what it produces:
+Below is the actual terminal output from `python -m src.main` for the default
+**"The Focused Studier"** profile (`genre=lofi`, `mood=focused`, `energy=0.4`,
+`likes_acoustic=True`):
 
 ```
-# e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
+Loading songs from data/songs.csv...
+Loaded songs: 18
+
+Top recommendations:
+
+Focus Flow - Score: 100.00
+Because: matches your favorite genre (lofi); matches your mood (focused); energy 0.40 is close to your target 0.40; has the acoustic texture you enjoy
+
+Midnight Coding - Score: 87.50
+Because: matches your favorite genre (lofi); has a related mood (chill ~ focused); energy 0.42 is close to your target 0.40; has the acoustic texture you enjoy
+
+Library Rain - Score: 86.75
+Because: matches your favorite genre (lofi); has a related mood (chill ~ focused); energy 0.35 is close to your target 0.40; has the acoustic texture you enjoy
+
+Coffee Shop Stories - Score: 52.25
+Because: has a related mood (relaxed ~ focused); energy 0.37 is close to your target 0.40; has the acoustic texture you enjoy
+
+Spacewalk Thoughts - Score: 50.00
+Because: has a related mood (chill ~ focused); energy 0.28 is close to your target 0.40; has the acoustic texture you enjoy
 ```
+
+The top result, *Focus Flow*, scores a perfect 100 because it matches the
+profile on every signal (lofi genre, focused mood, exact energy, acoustic
+texture). The next results are other lofi/acoustic tracks whose moods are
+*adjacent* to "focused," which is exactly what a studier would want next.
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
 
